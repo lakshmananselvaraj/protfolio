@@ -1,0 +1,36 @@
+.footer {
+  background-color: #003366; /* Dark blue background */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  /* Reduced border size */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #fafafa; /* Light blue link color */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: white; /* Change to white on hover */
+}

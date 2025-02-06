@@ -1,0 +1,116 @@
+/* Home Page Content */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin-top: 50px;
+  animation: slideUp 1.5s ease-out; /* Apply slideUp animation */
+}
+
+.home-left {
+  flex: 1;
+  text-align: left;
+  animation: fadeIn 2s ease-out; /* Fade-in effect for home-left */
+}
+
+.home-left h1 {
+  font-size: 45px; /* Reduced font size for name */
+  margin-bottom: 5px; /* Reduced space between h1 and h2 */
+  font-family: 'Arial', sans-serif; /* Change font family */
+  animation: fadeInTitle 2s ease-out; /* Fade-in and slide-up effect */
+}
+
+.home-left h2 {
+  font-size: 35px; /* Reduced font size for "Frontend Developer" */
+  margin-bottom: 15px; /* Reduced space between h2 and p */
+  font-family: 'Verdana', sans-serif; /* Change font family */
+}
+
+.home-left h3 {
+  font-size: 25px;
+  font-family: 'Verdana', sans-serif;
+  margin-bottom: 20px;
+  animation: fadeIn 3s ease-out; /* Fade-in effect for h3 */
+}
+
+.home-left h3 span.first-part {
+  color: white; /* "I'm a" in white */
+}
+
+.home-left h3 span.second-part {
+  color: #61a9f1; /* "Frontend Developer" in blue */
+}
+
+/* Styling for paragraph */
+.home-left p {
+  font-size: 20px; /* Adjusted font size for paragraph */
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif; /* Font family for paragraph */
+  animation: fadeIn 4s ease-out; /* Fade-in effect for paragraph */
+}
+
+/* Contact Button */
+.contact-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #61a9f1; /* Blue button */
+  color: black; /* Black text */
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 20px;
+  border: none; /* No border */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #4659e8; /* Change to lighter blue when hovered */
+  color: white; /* Change text color on hover */
+}
+
+.home-right {
+  flex: 1;
+  text-align: center;
+  animation: fadeIn 2.5s ease-out; /* Fade-in effect for home-right */
+}
+
+.home-right .profile-img {
+  width: 350px; /* Increased image size */
+  height: 350px;
+  border-radius: 50%; /* Circular image */
+  border: 5px solid white; /* White border around the image */
+  object-fit: cover;
+  animation: fadeIn 3.5s ease-out; /* Fade-in effect for profile image */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,134 @@
+/* General Styling */
+body {
+  background-color: #003366; /* Dark blue background */
+  color: white; /* Text color for contrast */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Skills Page Container */
+.skills-container {
+  text-align: center;
+  padding: 50px;
+  gap: 90px; /* Add spacing between skill sections */
+  margin-top: 150px; /* Adjust space below the title */
+  animation: fadeIn 2s ease-out; /* Add fade-in effect for the container */
+}
+
+/* Title Styling */
+.skills-title {
+  font-size: 40px;
+  color: #f5f7f7; /* Light blue for the title */
+  font-weight: bold;
+  text-align: center; /* Center the text horizontally */
+  margin-bottom: 50px; /* Remove default margin */
+  position: absolute; /* Absolute positioning */
+  top: 120px; /* Align the title to the top of the page */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for exact centering */
+  margin-bottom: 50px; /* Space below the title */
+  animation: slideInFromTop 2s ease-out; /* Slide-in effect for title */
+}
+
+/* Skills Section Container */
+.skills-section {
+  background-color: #00509e; /* Blue container background */
+  border-radius: 5px; /* Less rounded */
+  padding: 15px;
+  width: 300px; /* Reduced width */
+  height: auto; /* Adjust height automatically */
+  display: flex;
+  flex-direction: column; /* Stack items vertically inside */
+  align-items: center;
+  border: 2px solid #00ccff; /* Light blue border for emphasis */
+  margin: 10px; /* Add space between containers */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1.5s ease-out; /* Fade-in and slide-up effect */
+}
+
+/* Horizontal Alignment for All Skill Sections */
+.skills-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 20px;
+}
+
+/* Skills Heading */
+.skills-heading {
+  font-size: 24px;
+  color: #ffcc00; /* Yellow heading */
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 2s ease-out; /* Fade-in effect for skill heading */
+}
+
+/* Skills Box Styling */
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* Center the skill boxes */
+}
+
+/* Skill Item Styling */
+.skill-item {
+  background-color: #0074d9; /* Medium blue for skill items */
+  color: white;
+  font-size: 16px;
+  padding: 8px 15px; /* Smaller padding */
+  border-radius: 5px; /* Rectangular appearance */
+  text-align: center;
+  min-width: 100px; /* Ensure consistent width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: fadeIn 2s ease-out; /* Fade-in effect for skill items */
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  background-color: #00ccff; /* Highlight color */
+}
+
+/* Specific Styles for Logos */
+.skill-item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

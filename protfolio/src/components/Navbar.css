@@ -1,0 +1,66 @@
+/* Apply dark blue background for the entire website */
+body {
+  background-color: #011e3a; /* Dark blue background */
+  color: white; /* White text color for contrast */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar container styling */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between the logo and navigation links */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #011e3a; /* Dark blue color for navbar */
+  color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo and Portfolio Name */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Reduced space between logo and name */
+}
+
+.navbar-logo .logo {
+  width: 40px; /* Adjust size for the logo */
+  height: 40px;
+  border-radius: 50%; /* Make the logo circular */
+  background-color: #011e3a; /* Dark blue background for the logo */
+  border: 2px solid white; /* White border for the logo */
+}
+
+.navbar-logo .portfolio-name {
+  font-size: 18px; /* Adjust portfolio name font size */
+  font-weight: bold;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #5d59e7; /* Change color on hover */
+}
+
+/* Optional: Styling for other sections like Home, About, Skills, Projects, Contact */
+section {
+  padding: 40px 20px;
+  margin: 20px 0;
+  background-color: #011e3a; /* Dark blue background for sections */
+  color: white; /* White text color for contrast */
+}

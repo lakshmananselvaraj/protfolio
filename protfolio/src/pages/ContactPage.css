@@ -1,0 +1,150 @@
+/* General Styles for Portfolio Contact Page */
+.portfolio-contact-page {
+  background-color: #003366; /* Dark blue background */
+  color: white;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center;
+   /* Horizontally center the content */
+  position: relative;
+  padding: 50px 0; /* Equal padding for top and bottom */
+  box-sizing: border-box;
+}
+
+/* Portfolio Contact Title Styles */
+.portfolio-contact-title {
+  font-size: 50px;
+  color: #f5f7f7; /* Light blue */
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+  animation: fadeInTitle 2s ease-out;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Add spacing between letters for style */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for effect */
+  margin-top: 50px; /* Title will be at the top with some space */
+}
+
+/* Main Content Container */
+.portfolio-contact-container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent container */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  left: 350px;
+  max-width: 700px;
+  animation: slideUp 1.5s ease-out;
+  text-align: center;
+}
+
+/* Portfolio Contact Information */
+.portfolio-contact-info h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #29a3c2; /* Light blue */
+  margin-bottom: 15px;
+  animation: fadeIn 2s ease-out;
+}
+
+.portfolio-contact-info p {
+  font-size: 18px;
+  color: #f5f7f7;
+  line-height: 1.6;
+  animation: fadeIn 3s ease-out;
+}
+
+/* Contact Form Styles */
+.portfolio-contact-form label {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.portfolio-contact-form input,
+.portfolio-contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  color: #003366;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.portfolio-contact-form input:focus,
+.portfolio-contact-form textarea:focus {
+  background-color: #e8f4fc;
+  border: 2px solid #00ccff;
+}
+
+.portfolio-contact-form button {
+  background-color: #00ccff;
+  color: white;
+  padding: 14px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.portfolio-contact-form button:hover {
+  background-color: #0099cc;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Portfolio Contact Overlay */
+.portfolio-contact-overlay {
+  position: absolute;
+  top: 50px; /* Fixed gap from the top */
+  left: 50px; /* Fixed gap from the left */
+  right: 50px; /* Fixed gap from the right */
+  bottom: 50px; /* Fixed gap from the bottom */
+  opacity: 0.7; /* Darken the background image */
+  z-index: 1; /* Ensure the overlay is behind the main content */
+}
